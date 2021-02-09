@@ -1,0 +1,32 @@
+
+.container { 
+              display:grid;
+              grid-gap: 0;
+              grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); 
+             
+              grid-auto-rows: 225px ;
+              grid-auto-flow:dense;
+              background-color: rgb(139, 20, 20);
+                         
+              
+}
+.container>div>img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+.horizontal { grid-column: span 3;
+    grid-row: span 2;}
+            
+.vertical { grid-row: span 2;}
+
+.big {grid-column: span 2; 
+      grid-row: span 2;
+                         }
+
+a {text-decoration: none;
+   position: relative; 
+   left:50%  }
+
+a :hover{   color: green;   }
